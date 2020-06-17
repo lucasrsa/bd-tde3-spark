@@ -1,77 +1,72 @@
-# Análise de Dados com MapReduce
+# Análise de Dados com Spark
 
 **Resultados das execuções das classes**
 
 1 - O número de transações, por mercadoria, envolvendo o Brasil;
-(BrazilTradeCount)
+(BrazilTransactionCountByCommodity)
 
 | Mercadoria                                            | Nº Transações |
 | ----------------------------------------------------- | ------------- |
-| Abaca fibre, processed but not spun, tow, noils, wast | 9             |
-| Abaca fibre, raw                                      | 7             |
-| Abrasive powder or grain on a base of other material  | 64            |
-| Abrasive powder, grain on paper or paperboard support | 62            |
-| Abrasive powderor grain on woven textile support      | 62            |
+| Fluorides of ammonium or of sodium | 37 |
+| Agarbatti, odorifers operated by burning | 55 |
+| Glucose, glucose syrup < 20% fructose | 56 |
+| Trucks nes | 40 |
+| Articles, iron or steel nes, forged/stamped, nfw | 70 |
 
 2 - Quantidade de transações financeiras realizadas por ano;
-(TransactionsByYear)
+(CountTransactionsByYear)
 
 | Ano  | Nº Transações |
 | ---- | ------------- |
-| 1988 | 30994         |
-| 1989 | 63921         |
-| 1990 | 72258         |
-| 1991 | 83933         |
-| 1992 | 121184        |
+| 2010 | 373791 |
+| 2011 | 374596 |
+| 2012 | 377343 |
+| 2013 | 370936 |
+| 2014 | 364454 |
 
 3 - Mercadoria mais transacionada em 2016, no fluxo de importação e no Brasil;
-(HighestTradeBrazil)
+(HighestImportedBrazilCommodity2016)
 
 | Fluxo  | Mercadoria                                            |
 | ------ | ----------------------------------------------------- |
-| Export | Iron ore, concentrate, not iron pyrites,unagglomerate |
 | Import | Bituminous coal, not agglomerated                     |
 
 4 - Média de peso por mercadoria, separadas de acordo com o ano;
-(CommodityAvgWeight)
+(CommodityAvgWeightByYear)
 
 | Mercadoria                              | Ano  | Peso      |
 | --------------------------------------- | ---- | --------- |
-| 1,2,3,4,5,6-hexachlorocyclohexane       | 1988 | 28.0      |
-| 1,2-dichloroethane(ethylene dichloride) | 1988 | 1592047.4 |
-| 1,2-dichloropropane and dichlorobutanes | 1989 | 1257859.2 |
-| 1,2-dichloroethane(ethylene dichloride) | 1990 | 1525837.4 |
-| 1,2-dichloropropane and dichlorobutanes | 1988 | 600.0     |
+| Cereals, hulled, pearled, sliced or kibbled nes | 2015 | 3299129.0      |
+| Magnesium sulphate | 1995 | 990888.9 |
+| Woven products of stainless steel | 1996 | 124525.1 |
+| Water-skis, surf-boards, other watersport equipment | 2001 | 372513.22 |
+| Medicaments nes, in dosage | 1997 | 6812107.0 |
 
 5 - Média de peso por mercadoria comercializadas no Brasil, separadas por ano;
-(CommodityAvgWeightBr)
+(CommodityAvgWeightByYearBrazil)
 
 | Mercadoria                                           | Ano  | Peso     |
 | ---------------------------------------------------- | ---- | -------- |
-| Abrasive powder or grain on a base of other material | 1989 | 125481.5 |
-| Abrasive powder or grain on a base of other material | 1990 | 143742.5 |
-| Abrasive powder or grain on a base of other material | 1991 | 218988.0 |
-| Abrasive powder or grain on a base of other material | 1992 | 266169.5 |
-| Abrasive powder or grain on a base of other material | 1993 | 309784.0 |
+| Worked human hair, wool or animal hair, for wig makin | 2010 | 50787.0 |
+| Cereals, hulled, pearled, sliced or kibbled nes | 2015 | 125729.5 |
+| Roasted iron pyrites | 1995 | 50.0 |
+| Magnesium sulphate | 1995 | 171289.0 |
+| Woven products of stainless steel | 1996 | 41905.5 |
 
 6 - Mercadoria com o maior preço por unidade de peso;
-(CommodityWeightPrice)
+(MostExpensiveCommodityByWeight)
 
 | Mercadoria                                  | USD / Kg  |
 | ------------------------------------------- | --------- |
-| 1,2,3,4,5,6-hexachlorocyclohexane           | Infinity  |
-| 1,2-dichloroethane(ethylene dichloride)     | 4.617816  |
-| 1,2-dichloropropane and dichlorobutanes     | 0.535644  |
-| 1-chloro-2,3-epoxypropane(epichlorohy-drin) | 0.9218627 |
-| 1-cyanoguanidine (dicyandiamide)            | 1.7260747 |
+| Rhodium unwrought or in powder form | 23516.555 |
 
 7 - Quantidade de transações comerciais de acordo com o fluxo, de acordo com o ano;
-(TransactionsByFluxAndYear)
+(TransactionCountByYearFlux)
 
 | Ano  | Fluxo  | Nº Transações |
 | ---- | ------ | ------------- |
-| 1988 | Export | 12510         |
-| 1989 | Export | 26166         |
-| 1990 | Export | 29170         |
-| 1991 | Export | 32847         |
-| 1992 | Export | 45810         |
+| 2009 | Re-Import | 9289         |
+| 2015 | Export | 125878         |
+| 2012 | Re-Export | 16900         |
+| 2014 | Import | 208749         |
+| 2005 | Export | 125475         |
